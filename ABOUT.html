@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> SIMPLE ABALONE</title>
+	<link rel="stylesheet" href="style.css">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playpen+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--link za simbole style... -->
+
+</head>
+<body>
+<section class="sub-header">
+<nav>
+<a href="index.html"> <img src="logo.png" alt="" ></a>
+
+<div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i> <!--ikona za male ekrane -->
+    <ul>
+        <li><a href="index.html"> HOME </a> </li>
+        <li><a href=""> ABOUT </a> </li>
+        <li><a href="CONTACT.html"> CONTACT </a> </li>
+        <li><a href="shopp.html"> SHOP </a> </li>
+        <li><a href="SHOPPINGCART.html"> CART </a> </li>
+    </ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>ABOUT US</h1>
+</section>
+
+<section class="about-us">
+
+<div class="row">
+      <div class="about-col">
+        <h1>The Birth of Simple Abalone</h1>
+        <p> In the vibrant port city of Rijeka, Croatia, there lived a young woman named Danijela. From her apartment overlooking the Adriatic Sea, she found solace in the rhythmic sounds of waves crashing against the shore and the salty breeze that danced through her window.
+            <br>Danijela's fascination with the ocean ran deep, and her heart belonged to its treasures. Among them, she found herself captivated by the mesmerizing beauty of abalone shells. Their shimmering colors and intricate patterns spoke to her soul, igniting a passion she couldn't ignore.
+           <br> Fuelled by her love for the sea and a desire to share its wonders with the world, Danijela embarked on a journey of creation. With unwavering determination, she established her own company, naming it "Simple Abalone." Her vision was clear—to craft exquisite jewelry and home decor pieces that celebrated the timeless allure of abalone.  
+          <br>  Armed with nothing but her creativity and a deep respect for nature, Danijela set out to make her dream a reality. She scoured the shores for the finest abalone shells, carefully selecting each one for its unique beauty and character. With skilled hands and a keen eye for detail, she transformed these treasures of the sea into works of art.</p>
+     <a href="shopp.html" class="hero-btn red-btn">EXPLORE NOW</a>
+    </div>
+
+      <div class="about-col">
+        <img src="about.png">
+    </div>
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!--footer-->
+<section class="footer">
+<div class="Waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+</div>
+
+
+
+    <ul class="social-icons"> 
+            <li> <a href="#"><i class="fa fa-facebook"></i> </a></li>       <!--ikonice preko fontawesome-->
+            <li> <a href="https://www.instagram.com/simple.abalone/" target="_blank"><i class="fa fa-instagram"></i> </a></li> 
+            <li> <a href="#"><i class="fa fa-pinterest-p"></i> </a></li> 
+            <li> <a href="#"><i class="fa fa-envelope"></i> </a></li> 
+    </ul>
+
+<ul class="menu">
+    <li> <a href="index.html">HOME</a></li>
+    <li> <a href="#">ABOUT</a></li>
+    <li> <a href="CONTACT.html">CONTACT</a></li>
+    <li> <a href="shopp.html">SHOP</a></li>
+    <li><a href="SHOPPINGCART.html"> CART </a> </li>
+</ul>
+<p>copyright © 2023 all rights reserved</p>
+</section>
+
+
+
+<!--skripta za umanjene ekrane, ikonice x i 3opcije se micu lijevo desno na klik -->
+<script>                           
+var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+navLinks.style.right = "0";
+}
+
+function hideMenu() {
+navLinks.style.right = "-200px";
+}
+</script>
+</body>
+</html>
+

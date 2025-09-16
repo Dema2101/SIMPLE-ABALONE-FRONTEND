@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> SIMPLE ABALONE</title>
+	<link rel="stylesheet" href="info.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playpen+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--link za simbole style... -->
+
+</head>
+<body>
+<section class="sub-header">
+<nav>
+<a href="index.html"> <img src="logo.png" alt="" ></a>
+
+<div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i> <!--ikona za male ekrane -->
+    <ul>
+        <li><a href="index.html"> HOME </a> </li>
+        <li><a href="ABOUT.html"> ABOUT </a> </li>
+        <li><a href="CONTACT.html"> CONTACT </a> </li>
+        <li><a href="shopp.html"> SHOP </a> </li>
+        <li><a href="SHOPPINGCART.html"> CART </a> </li>
+    </ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+<h1>Laneni Kimono</h1>
+</section>
+
+
+
+
+
+
+<div class="offer">
+    <div class="row">
+        <div class="col-25"> <img src="kimono.jpg" class="offer-img"> </div>
+        <div class="col-25"> <p>Exclusively available on Simple Abalone</p>
+        <h1 style="font-size: 40px;">An all-season kimono</h1>
+        <h4>$80.00</h4>
+        <small> Ova lanena haljina je ne samo elegantna, već i izuzetno kvalitetna. Izrađena od najfinijeg lanenog materijala, nudi udobnost i prozračnost, idealnu za sve prilike.
+             Njen sofisticirani dizajn i izdržljivost čine je nezaobilaznim dodatkom za svaku ženu koja ceni stil i trajnost.</small><br><br>
+        SELECT SIZE AND QUANTITY<br>
+        <select name="selekt">
+<option>XL</option>
+<option>L</option>
+<option>M</option>
+<option>S</option>
+        </select> <input type="number" value="1"> <br>
+       
+       
+        <a href="SHOPPINGCART.html" class="btn"> Add to Cart &#8594;</a>
+    </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer-->
+<section class="footer">
+<div class="Waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+</div>
+
+
+
+    <ul class="social-icons"> 
+            <li> <a href="#"><i class="fa fa-facebook"></i> </a></li>       <!--ikonice preko fontawesome-->
+            <li> <a href="https://www.instagram.com/simple.abalone/" target="_blank"><i class="fa fa-instagram"></i> </a></li> 
+            <li> <a href="#"><i class="fa fa-pinterest-p"></i> </a></li> 
+            <li> <a href="#"><i class="fa fa-envelope"></i> </a></li> 
+    </ul>
+
+<ul class="menu">
+    <li> <a href="index.html">HOME</a></li>
+    <li> <a href="ABOUT.html">ABOUT</a></li>
+    <li> <a href="CONTACT.html">CONTACT</a></li>
+    <li> <a href="shopp.html">SHOP</a></li>
+    <li><a href="SHOPPINGCART.html"> CART </a> </li>
+</ul>
+<p>copyright © 2023 all rights reserved</p>
+</section>
+
+
+
+<!--skripta za umanjene ekrane, ikonice x i 3opcije se micu lijevo desno na klik -->
+<script>                           
+var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+navLinks.style.right = "0";
+}
+
+function hideMenu() {
+navLinks.style.right = "-200px";
+}
+</script>
+</body>
+</html>
+

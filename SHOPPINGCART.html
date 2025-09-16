@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title> SIMPLE ABALONE</title>
+	<link rel="stylesheet" href="shopcart.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playpen+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> <!--link za simbole style... -->
+
+</head>
+<body>
+<section class="sub-header">
+<nav>
+<a href="index.html"> <img src="logo.png" alt="" ></a>
+
+<div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i> <!--ikona za male ekrane -->
+    <ul>
+        <li><a href="index.html"> HOME </a> </li>
+        <li><a href="ABOUT.html"> ABOUT </a> </li>
+        <li><a href="CONTACT.html"> CONTACT </a> </li>
+        <li><a href="shopp.html"> SHOP </a> </li>
+        <li><a href="SHOPPINGCART.html"> CART </a> </li>
+    </ul>
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+</nav>
+</section>
+
+
+
+
+<!--cart items details-->
+
+<div class="small-container cart-page">
+<table>
+<tr>
+<th>Product</th>
+<th>Quantity</th>
+<th>Subtotal</th>
+</tr>
+
+<tr>
+<td>
+    <div class="cart-info"> 
+        <img src="haljina.JPG" width="200px" >
+        <div> 
+            <p>Lanena haljina</p> 
+            <small>Price: $70.00</small> <br>
+            <a href="">Remove</a>
+        </div>
+    </div>
+
+</td>
+<td><input type="number" value="1"></td>
+<td>$70.00</td>
+</tr>
+
+
+
+<tr>
+    <td>
+        <div class="cart-info"> 
+            <img src="dodatci.jpg" width="200px" >
+            <div> 
+                <p>Dodatci</p> 
+                <small>Price: $40.00</small> <br>
+                <a href="">Remove</a>
+            </div>
+        </div>
+    
+    </td>
+    <td><input type="number" value="1"></td>
+    <td>$40.00</td>
+    </tr>
+
+
+ <tr>
+        <td>
+            <div class="cart-info"> 
+                <img src="kimono.jpg" width="200px" >
+                <div> 
+                    <p>Kimono</p> 
+                    <small>Price: $80.00</small> <br>
+                    <a href="">Remove</a>
+                </div>
+            </div>
+        
+        </td>
+        <td><input type="number" value="1"></td>
+        <td>$80.00</td>
+</tr>
+</table>
+<div class="total-price">
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>$190.00</td>
+        </tr>
+        <tr>
+            <td>Tax</td>
+            <td>$47.50</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>$237.50</td>
+        </tr>
+    </table>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--footer-->
+<section class="footer">
+<div class="Waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+</div>
+
+
+
+    <ul class="social-icons"> 
+            <li> <a href="#"><i class="fa fa-facebook"></i> </a></li>       <!--ikonice preko fontawesome-->
+            <li> <a href="https://www.instagram.com/simple.abalone/" target="_blank"><i class="fa fa-instagram"></i> </a></li> 
+            <li> <a href="#"><i class="fa fa-pinterest-p"></i> </a></li> 
+            <li> <a href="#"><i class="fa fa-envelope"></i> </a></li> 
+    </ul>
+
+<ul class="menu">
+    <li> <a href="index.html">HOME</a></li>
+    <li> <a href="ABOUT.html">ABOUT</a></li>
+    <li> <a href="CONTACT.html">CONTACT</a></li>
+    <li> <a href="shopp.html">SHOP</a></li>
+    <li><a href="SHOPPINGCART.html"> CART </a> </li>
+</ul>
+<p>copyright © 2023 all rights reserved</p>
+</section>
+
+
+
+<!--skripta za umanjene ekrane, ikonice x i 3opcije se micu lijevo desno na klik -->
+<script>                           
+var navLinks = document.getElementById("navLinks");
+
+function showMenu() {
+navLinks.style.right = "0";
+}
+
+function hideMenu() {
+navLinks.style.right = "-200px";
+}
+</script>
+</body>
+</html>
+
